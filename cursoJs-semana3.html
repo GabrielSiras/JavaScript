@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista = [];
+        let novoItem = prompt("Digite o nome do item ou - se não quiser adicionar: ");
+        while(novoItem != "-"){
+            lista.push(novoItem);
+            novoItem = prompt("Digite o nome do item ou - se não quiser adicionar: ");
+        }
+        if(lista.length == 0){
+            alert("A lista está vazia!");
+        } else {
+            alert("Você deve comprar estes itens:");
+        }
+
+        lista.forEach(item => {
+            alert(item);
+        });
+        
+        //desafio de tirar itens da lista
+        
+        let decisao = prompt("Deseja tirar algum item da lista? Se sim digite o nome do item se não digite N:");
+        while(decisao != "N"){
+            lista = lista.filter(item => item != decisao);
+            decisao = prompt("Deseja tirar outro item da lista? Se sim digite o nome do item se não digite N:");
+        }
+        
+        if(lista.length == 0){
+            alert("A lista está vazia!");
+        } else {
+            alert("Lista atualizada:");
+            lista.forEach(item =>{
+                alert(item);
+            })
+        }
+    </script>
+</body>
+</html>

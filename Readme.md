@@ -1,0 +1,1 @@
+Nestes arquivos de JS, aprendi no curso do IFMG de JS Básico a como utilizar o JS, seus conceitos e aplicações.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é a senha?</title>
+</head>
+<body>
+    <h1>
+        Faça um código com “if-else” para validar se o dado de uma variável chamada “senha” é “1234abc”.
+    </h1>
+    <script>
+        const pass = "1234abc";
+        let user = prompt("Informe o seu nome: ");
+
+        let senha = prompt("Informe a senha de acesso:");
+        
+        while(senha != pass){
+            alert("Senha incorreta! Tente novamente!");
+            senha = prompt("Informe a senha de acesso:");
+        }
+        
+        alert("Bem-vindo " + user + "!");
+    </script>
+</body>
+</html>

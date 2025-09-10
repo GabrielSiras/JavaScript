@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xadrez</title>
+</head>
+<body>
+    <script>let board =[ 
+        ['T','C','B','Q','K','B','C','T'],
+        ['P','P','P','P' ,'P','P','P','P'],
+        [' ' , ' ' , ' ' , ' ' , ' ', ' ', ' ' ,' ' ],
+        [' ' , ' ' , ' ' , ' ' , ' ', ' ', ' ' ,' ' ],
+        [' ' , ' ' , ' ' , ' ' , ' ', ' ', ' ' ,' ' ],
+        [' ' , ' ' , ' ' , ' ' , ' ', ' ', ' ' ,' ' ],
+        ['p','p' ,'p' ,'p' ,'p','p', 'p','p'],
+        ['t' ,'c' ,'b' ,'q' ,'k' ,'b','c', 't' ]
+    ];
+
+    console.log(board.join('\n'));
+
+    console.log("\nFazendo o peão avançar");
+    board[4][4] = board[6][4];
+    board[6][4] = ' ';
+    console.log(board.join('\n'));
+
+    console.log("\nFazendo o cavalo avançar:");
+    board[2][5] = board[0][6]
+    console.log(board.join('\n'));
+
+    </script>
+</body>
+</html>
